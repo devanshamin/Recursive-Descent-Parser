@@ -36,9 +36,10 @@ BNF grammar of Mini Language
    Block --> "block" Statements<br />
    Expression --> Identifier | Literal | "("Operation Expression Expression")"<br />
    Operation --> "+" |"-" | "*" | "/" | "<" | "<=" | ">" | ">=" | "=" | "!=" | "or" | "and"<br />
+``` 
 Note: Symbol e means Symbol e means epsilon. Treat Identifier and Literal as terminal symbols.
 Every symbol inside " and " is a terminal symbol. The rest are non terminals.
-``` 
+
 ### Parser
 EBNF of Mini Language
 ```
@@ -56,6 +57,7 @@ EBNF of Mini Language
    Block --> "block" Statements<br />
    Expression --> Identifier | Literal | "("Operation Expression Expression")"<br />
    Operation --> "+" |"-" | "*" | "/" | "<" | "<=" | ">" | ">=" | "=" | "!=" | "or" | "and"<br />
+```
 Note: Treat Identifier and Literal as terminal symbols. Every symbol inside " and " is a terminal symbol. 
 The rest are non terminals.
-```
+
