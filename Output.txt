@@ -1,0 +1,167 @@
+Line: 1, Spelling: (, Kind: 9
+Enter parseProgram
+Line: 2, Spelling: (, Kind: 9
+Enter parseSequence
+Line: 3, Spelling: (, Kind: 9
+Enter parseStatements
+Enter parseStmt
+Line: 3, Spelling: assign, Kind: 2
+Enter parseAssignment
+Line: 3, Spelling: x, Kind: 0
+Line: 3, Spelling: 3, Kind: 1
+Enter parseExpression
+Line: 3, Spelling: ), Kind: 10
+Exit parseExpression
+Exit parseAssignment
+Line: 4, Spelling: (, Kind: 9
+Exit parseStmt
+Enter parseStmt
+Line: 4, Spelling: assign, Kind: 2
+Enter parseAssignment
+Line: 4, Spelling: y, Kind: 0
+Line: 4, Spelling: (, Kind: 9
+Enter parseExpression
+Line: 4, Spelling: +, Kind: 11
+Enter parseOperation
+Line: 4, Spelling: x, Kind: 0
+Exit parseOperation
+Enter parseExpression
+Line: 4, Spelling: 1, Kind: 1
+Exit parseExpression
+Enter parseExpression
+Line: 4, Spelling: ), Kind: 10
+Exit parseExpression
+Line: 4, Spelling: ), Kind: 10
+Exit parseExpression
+Exit parseAssignment
+Line: 5, Spelling: (, Kind: 9
+Exit parseStmt
+Enter parseStmt
+Line: 5, Spelling: conditional, Kind: 3
+Enter parseConditional
+Line: 5, Spelling: (, Kind: 9
+Enter parseExpression
+Line: 5, Spelling: <, Kind: 11
+Enter parseOperation
+Line: 5, Spelling: x, Kind: 0
+Exit parseOperation
+Enter parseExpression
+Line: 5, Spelling: y, Kind: 0
+Exit parseExpression
+Enter parseExpression
+Line: 5, Spelling: ), Kind: 10
+Exit parseExpression
+Line: 5, Spelling: (, Kind: 9
+Exit parseExpression
+Enter parseStmt
+Line: 5, Spelling: assign, Kind: 2
+Enter parseAssignment
+Line: 5, Spelling: a, Kind: 0
+Line: 5, Spelling: x, Kind: 0
+Enter parseExpression
+Line: 5, Spelling: ), Kind: 10
+Exit parseExpression
+Exit parseAssignment
+Line: 5, Spelling: (, Kind: 9
+Exit parseStmt
+Enter parseStmt
+Line: 5, Spelling: assign, Kind: 2
+Enter parseAssignment
+Line: 5, Spelling: a, Kind: 0
+Line: 5, Spelling: y, Kind: 0
+Enter parseExpression
+Line: 5, Spelling: ), Kind: 10
+Exit parseExpression
+Exit parseAssignment
+Line: 5, Spelling: ), Kind: 10
+Exit parseStmt
+Exit parseConditional
+Line: 6, Spelling: (, Kind: 9
+Exit parseStmt
+Enter parseStmt
+Line: 6, Spelling: loop, Kind: 4
+Enter parseLoop
+Line: 6, Spelling: (, Kind: 9
+Enter parseExpression
+Line: 6, Spelling: <, Kind: 11
+Enter parseOperation
+Line: 6, Spelling: b, Kind: 0
+Exit parseOperation
+Enter parseExpression
+Line: 6, Spelling: (, Kind: 9
+Exit parseExpression
+Enter parseExpression
+Line: 6, Spelling: -, Kind: 11
+Enter parseOperation
+Line: 6, Spelling: 2, Kind: 1
+Exit parseOperation
+Enter parseExpression
+Line: 6, Spelling: 0, Kind: 1
+Exit parseExpression
+Enter parseExpression
+Line: 6, Spelling: ), Kind: 10
+Exit parseExpression
+Line: 6, Spelling: ), Kind: 10
+Exit parseExpression
+Line: 6, Spelling: (, Kind: 9
+Exit parseExpression
+Enter parseStmt
+Line: 6, Spelling: assign, Kind: 2
+Enter parseAssignment
+Line: 6, Spelling: b, Kind: 0
+Line: 6, Spelling: (, Kind: 9
+Enter parseExpression
+Line: 6, Spelling: +, Kind: 11
+Enter parseOperation
+Line: 6, Spelling: b, Kind: 0
+Exit parseOperation
+Enter parseExpression
+Line: 6, Spelling: 1, Kind: 1
+Exit parseExpression
+Enter parseExpression
+Line: 6, Spelling: ), Kind: 10
+Exit parseExpression
+Line: 6, Spelling: ), Kind: 10
+Exit parseExpression
+Exit parseAssignment
+Line: 6, Spelling: ), Kind: 10
+Exit parseStmt
+Exit parseLoop
+Line: 7, Spelling: ), Kind: 10
+Exit parseStmt
+Exit parseStatements
+Line: 8, Spelling: (, Kind: 9
+Exit parseSequence
+Enter parseState
+Line: 8, Spelling: (, Kind: 9
+Enter parsePairs
+Enter parsePair
+Line: 8, Spelling: a, Kind: 0
+Line: 8, Spelling: 0, Kind: 1
+Line: 8, Spelling: ), Kind: 10
+Line: 8, Spelling: (, Kind: 9
+Exit parsePair
+Enter parsePair
+Line: 8, Spelling: b, Kind: 0
+Line: 8, Spelling: 0, Kind: 1
+Line: 8, Spelling: ), Kind: 10
+Line: 8, Spelling: (, Kind: 9
+Exit parsePair
+Enter parsePair
+Line: 8, Spelling: x, Kind: 0
+Line: 8, Spelling: 0, Kind: 1
+Line: 8, Spelling: ), Kind: 10
+Line: 8, Spelling: (, Kind: 9
+Exit parsePair
+Enter parsePair
+Line: 8, Spelling: y, Kind: 0
+Line: 8, Spelling: 0, Kind: 1
+Line: 8, Spelling: ), Kind: 10
+Line: 8, Spelling: ), Kind: 10
+Exit parsePair
+Exit parsePairs
+Line: 9, Spelling: ), Kind: 10
+Exit parseState
+End
+Exit parseProgram
+The syntax of the source program is correct.

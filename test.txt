@@ -1,0 +1,9 @@
+(
+  (
+    (assign x 3)
+    (assign y (+ x 1))
+    (conditional (< x y)  (assign a x)  (assign a y))
+    (loop (< b (- 2 0))  (assign b (+ b 1)))
+  )
+  ((a 0)(b 0)(x 0)(y 0))
+)
