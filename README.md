@@ -1,58 +1,61 @@
-# Recursive-Descent-Parser
+# Recursive Descent Parser
 
-Mini language
+Top down parser which checks if the input is part of the language or not. 
 
-Token
-   Program --> Sequence State.
-   Sequence --> (Statements ).
-   Statements --> Statements Stmt | Stmt
-   Stmt --> NullStatement | Assignment | Conditional | Loop | Block.
-   State -->  (Pairs).
-   Pairs --> Pairs Pair | Pair.
-   Pair --> (Identifier Literal).
-   NullStatement --> (skip).
-   Assignment --> (assign Identifier Expression).
-   Conditional --> (conditional Expression Stmt Stmt).
-   Loop --> (loop Expression Stmt).
-   Block --> (block Statements).
-   Expression --> Identifier | Literal | (Operation Expression Expression).
-   Operation --> + | - | * | / | < | <= | > | >= | = | != | or | and.
- 
-Scanner
+### Token
+```
+   Program --> Sequence State<br />
+   Sequence --> (Statements )<br />
+   Statements --> Statements Stmt | Stmt<br />
+   Stmt --> NullStatement | Assignment | Conditional | Loop | Block<br />
+   State -->  (Pairs)<br />
+   Pairs --> Pairs Pair | Pair<br />
+   Pair --> (Identifier Literal)<br />
+   NullStatement --> (skip)<br />
+   Assignment --> (assign Identifier Expression)<br />
+   Conditional --> (conditional Expression Stmt Stmt)<br />
+   Loop --> (loop Expression Stmt)<br />
+   Block --> (block Statements)<br />
+   Expression --> Identifier | Literal | (Operation Expression Expression)<br />
+   Operation --> + | - | * | / | < | <= | > | >= | = | != | or | and<br />
+``` 
+### Scanner
 BNF grammar of Mini Language
-
-   Program" --> "("Sequence State")".
-   Sequence --> "("Statements")".
-   Statements --> Statements  Stmt | e
-   Stmt --> "(" {NullStatement | Assignment | Conditional | Loop | Block}")".
-   State -->  "("Pairs")".
-   Pairs -->  Pairs Pair | e.
-   Pair --> "("Identifier Literal")".
-   NullStatement --> "skip".
-   Assignment --> "assign" Identifier Expression.
-   Conditional --> "conditional" Expression Stmt Stmt.
-   Loop --> "loop" Expression Stmt.
-   Block --> "block" Statements.
-   Expression --> Identifier | Literal | "("Operation Expression Expression")".
-   Operation --> "+" |"-" | "*" | "/" | "<" | "<=" | ">" | ">=" | "=" | "!=" | "or" | "and".
- 
-Note: Symbol e means Symbol e means epsilon. Treat Identifier and Literal as terminal symbols. Every symbol inside " and " is a terminal symbol. The rest are non terminals.
- 
-Parser
+```
+   Program" --> "("Sequence State")"<br />
+   Sequence --> "("Statements")"<br />
+   Statements --> Statements  Stmt | e<br />
+   Stmt --> "(" {NullStatement | Assignment | Conditional | Loop | Block}")"<br />
+   State -->  "("Pairs")"<br />
+   Pairs -->  Pairs Pair | e<br />
+   Pair --> "("Identifier Literal")"<br />
+   NullStatement --> "skip"<br />
+   Assignment --> "assign" Identifier Expression<br />
+   Conditional --> "conditional" Expression Stmt Stmt<br />
+   Loop --> "loop" Expression Stmt<br />
+   Block --> "block" Statements<br />
+   Expression --> Identifier | Literal | "("Operation Expression Expression")"<br />
+   Operation --> "+" |"-" | "*" | "/" | "<" | "<=" | ">" | ">=" | "=" | "!=" | "or" | "and"<br />
+Note: Symbol e means Symbol e means epsilon. Treat Identifier and Literal as terminal symbols.
+Every symbol inside " and " is a terminal symbol. The rest are non terminals.
+``` 
+### Parser
 EBNF of Mini Language
-   Program" --> "("Sequence State")".
-   Sequence --> "("Statements")".
-   Statements --> Stmt*
-   Stmt --> "(" {NullStatement | Assignment | Conditional | Loop | Block}")".
-   State -->  "("Pairs")".
-   Pairs -->  Pair*.
-   Pair --> "("Identifier Literal")".
-   NullStatement --> "skip".
-   Assignment --> "assign" Identifier Expression.
-   Conditional --> "conditional" Expression Stmt Stmt.
-   Loop --> "loop" Expression Stmt.
-   Block --> "block" Statements.
-   Expression --> Identifier | Literal | "("Operation Expression Expression")".
-   Operation --> "+" |"-" | "*" | "/" | "<" | "<=" | ">" | ">=" | "=" | "!=" | "or" | "and".
-
-Note: Treat Identifier and Literal as terminal symbols. Every symbol inside " and " is a terminal symbol. The rest are non terminals.
+```
+   Program" --> "("Sequence State")"<br />
+   Sequence --> "("Statements")"<br />
+   Statements --> Stmt*<br />
+   Stmt --> "(" {NullStatement | Assignment | Conditional | Loop | Block}")"<br />
+   State -->  "("Pairs")"<br />
+   Pairs -->  Pair*<br />
+   Pair --> "("Identifier Literal")"<br />
+   NullStatement --> "skip"<br />
+   Assignment --> "assign" Identifier Expression<br />
+   Conditional --> "conditional" Expression Stmt Stmt<br />
+   Loop --> "loop" Expression Stmt<br />
+   Block --> "block" Statements<br />
+   Expression --> Identifier | Literal | "("Operation Expression Expression")"<br />
+   Operation --> "+" |"-" | "*" | "/" | "<" | "<=" | ">" | ">=" | "=" | "!=" | "or" | "and"<br />
+Note: Treat Identifier and Literal as terminal symbols. Every symbol inside " and " is a terminal symbol. 
+The rest are non terminals.
+```
