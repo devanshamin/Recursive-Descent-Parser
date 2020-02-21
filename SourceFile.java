@@ -11,7 +11,7 @@ public class SourceFile {
 		try {
 			//fileName = stdin.readLine();
 			//Change File location in FileReader when you run this parser on your system
-			FileReader fr = new FileReader("C:\\Devansh\\CCSU\\Semester-3\\CS 464\\Compiler\\src\\test.txt");
+			FileReader fr = new FileReader("C:\\Devansh\\Parser\\src\\test.txt");
 			inFile = new BufferedReader (fr);
 		}
 		catch(FileNotFoundException e){
