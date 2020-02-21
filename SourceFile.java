@@ -20,16 +20,4 @@ public class SourceFile {
 		return inFile;
 	}
 	
-	
-	public static void main(String[] args) throws IOException {
-		SourceFile sf = new SourceFile();
-		
-		BufferedReader br = sf.openFile();
-		int i;
-		while((i=br.read())!=-1){              //read() is used to read a single character from the stream. It returns -1 at the end of file.
-			System.out.print((char)i);  
-	    } 
-	} 
-	
-	
 }
