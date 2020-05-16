@@ -5,7 +5,7 @@ Top down parser which checks if the input is part of the language or not.
 ### Token
 ```
    Program --> Sequence State  
-   Sequence --> (Statements )  
+   Sequence --> (Statements)  
    Statements --> Statements Stmt | Stmt  
    Stmt --> NullStatement | Assignment | Conditional | Loop | Block  
    State -->  (Pairs)  
